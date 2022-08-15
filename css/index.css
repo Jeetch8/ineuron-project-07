@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter',sans-serif;
+}
+button{
+    background-color: #FE5E35;
+    border: none;
+    padding: 20px 40px;
+    font-size: 25px;
+    color: white;
+    border-radius: 100px;
+    word-wrap: nowrap;
+}
+
+
+
+/* Nav */
+nav{
+    padding: 50px 20px 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pages{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;
+    font-size: 25px;
+}
+.pages li:first-child{
+    color: #FE5E35;
+    font-weight: 800;
+}
+/* Nav End */
+
+
+/* Main Section */
+main{
+    display:flex;
+    justify-content: space-between;
+    padding: 0 200px 0 100px;
+}
+
+/* Left */
+.left{
+    margin-top: 50px;
+}
+.left h2{
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.left h1{
+    font-size: 80px;
+    font-family: 'Fredoka One', cursive;
+}
+.features{
+    margin-top: 60px;
+    margin-bottom: 70px;
+    line-height: 60px;
+}
+.features li{
+    list-style: none;
+    margin-left: 100px;
+    font-size: 28px;
+    font-weight: 500;
+}
+.features li::before{
+    content: url('../images/plus.svg');
+    background-color: #FE5E35;
+    margin-right: 30px;
+    border-radius: 50%;
+    padding: 2px 8px;
+}
+.left h4{
+    font-weight: 300;
+    color: grey;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+.btn__section{
+    display: flex;
+    gap: 40px;
+}
+/* Left End */
+
+
+
+/* Right */
+.right{
+    text-align: center;
+    position: relative;
+}
+.headphones{
+    position: relative;
+}
+.headphone__discount{
+    position: absolute;
+    top: 35vh;
+    filter: drop-shadow(.4em .45em 0px rgb(0, 0, 0,0.7));
+    color: white;
+    left: -3vw;
+}
+.headphone__discount h5{
+    position: absolute;
+    font-family: 'Fredoka One', cursive;
+    top: 5.5vh;
+    font-weight: 100;
+    left: 2.7vw;
+    font-size: 16px;
+}
+.headphone__discount h6{
+    position: absolute;
+    top: 6.5vh;
+    font-size: 60px;
+    font-family: 'Fredoka One', cursive;
+    left: 2vw;
+}
+.discount__inner__layer{
+    position: relative;
+}
+.headphone__colors{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: -4px;
+    padding-top: -50px;
+    margin-bottom: 35px;
+}
+.color1{
+    background-color: #FBD104;
+    padding: 16px;
+    width: fit-content;
+    border-radius: 50%;
+}
+.color2{
+    background-color: #FE5E35;
+    padding: 16px;
+    width: fit-content;
+    border-radius: 50%;
+}
+.color3{
+    background-color: black;
+    padding: 16px;
+    width: fit-content;
+    border-radius: 50%;
+}
+/* Right End */
+
+/* Main Section  End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries sm*/
+@media only screen and (max-width:1460px){
+    .pages{
+        display: none;
+    }
+    main{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .headphone__discount{
+        top: 55vh;
+    }
+    .headphone__discount h5{
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .headphone__discount h6{
+        margin-top: 22px;
+        margin-left: 10px;
+    }
+    .right{
+        margin-top: 80px;
+    }
+}
