@@ -1,200 +1,204 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+/* Fredoka */
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Inter',sans-serif;
-}
-button{
-    background-color: #FE5E35;
-    border: none;
-    padding: 20px 40px;
-    font-size: 25px;
-    color: white;
-    border-radius: 100px;
-    word-wrap: nowrap;
+    font-family: 'Lato',sans-serif;
 }
 
 
 
-/* Nav */
+/* NAV */
 nav{
-    padding: 50px 20px 50px 100px;
     display: flex;
-    align-items: center;
+    padding-left: 100px;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.nav__logo{
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    margin-right: 100px;
 }
 .pages{
     display: flex;
-    list-style-type: none;
+    list-style: none;
+    font-size: 21px;
     gap: 50px;
-    font-size: 25px;
 }
 .pages li:first-child{
     color: #FE5E35;
-    font-weight: 800;
+    font-weight: 900;
+    font-size: 23px;
 }
-/* Nav End */
+.profile svg{
+    display: none;
+    width: 20px;
+    margin-right: 100px;
+}
+/* NAV END */
 
 
-/* Main Section */
+/* HERO */
+/* MAIN */
 main{
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    padding: 0 200px 0 100px;
 }
-
-/* Left */
+/* MAIN END */
+/* LEFT */
 .left{
-    margin-top: 50px;
-}
-.left h2{
-    font-weight: 500;
-    font-size: 3rem;
-    margin-bottom: 30px;
+    margin-top: 150px;
+    margin-left: 100px;
 }
 .left h1{
-    font-size: 80px;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka',sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.left h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.left h2 img{
+    max-width: 45px;
 }
 .features{
-    margin-top: 60px;
-    margin-bottom: 70px;
-    line-height: 60px;
-}
-.features li{
     list-style: none;
     margin-left: 100px;
-    font-size: 28px;
-    font-weight: 500;
+    font-size: 25px;
+    line-height: 60px;
+    margin-bottom: 55px;
 }
 .features li::before{
     content: url('../images/plus.svg');
     background-color: #FE5E35;
-    margin-right: 30px;
     border-radius: 50%;
-    padding: 2px 8px;
+    padding: 0 5px;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
 }
 .left h4{
+    font-size: 20px;
     font-weight: 300;
     color: grey;
-    font-size: 20px;
-    margin-bottom: 60px;
+    max-width: 850px;
+    margin-bottom: 40px;
 }
 .btn__section{
     display: flex;
+    gap: 50px;
+}
+.left button, .right button{
+    padding: 15px 30px;
+    font-size: 25px;
+    color: white;
+    background-color: #FE5E35;
+    border: none;
+    border-radius: 50px;
+}
+/* LEFT END */
+
+
+
+/* RIGHT */
+.right{
+    margin-right: 100px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right button{
+    margin-top: 30px;
+}
+.headphone__colors{
+    display: flex;
     gap: 40px;
 }
-/* Left End */
-
-
-
-/* Right */
-.right{
-    text-align: center;
-    position: relative;
+.color1{
+    background-color: #FBD104;
+    padding: 15px;
+    border-radius: 50px;
 }
+.color2{
+    background-color: #FE5E35;
+    padding: 15px;
+    border-radius: 50px;
+}
+.color3{
+    background-color: black;
+    padding: 15px;
+    border-radius: 50px;
+}
+/* DISCOUNT */
 .headphones{
     position: relative;
 }
 .headphone__discount{
-    position: absolute;
-    top: 35vh;
-    filter: drop-shadow(.4em .45em 0px rgb(0, 0, 0,0.7));
-    color: white;
-    left: -3vw;
-}
-.headphone__discount h5{
-    position: absolute;
-    font-family: 'Fredoka One', cursive;
-    top: 5.5vh;
-    font-weight: 100;
-    left: 2.7vw;
-    font-size: 16px;
-}
-.headphone__discount h6{
-    position: absolute;
-    top: 6.5vh;
-    font-size: 60px;
-    font-family: 'Fredoka One', cursive;
-    left: 2vw;
-}
-.discount__inner__layer{
     position: relative;
 }
-.headphone__colors{
+.discount__inner__layer{
+    position: absolute;
     display: flex;
+    top: 23%;
+    color: white;
+    font-family: 'Fredoka',sans-serif;
+    left: 20%;
+    flex-direction: column;
     justify-content: center;
-    gap: 40px;
-    margin-top: -4px;
-    padding-top: -50px;
-    margin-bottom: 35px;
+    line-height: 35px;
+    align-items: center;
 }
-.color1{
-    background-color: #FBD104;
-    padding: 16px;
-    width: fit-content;
-    border-radius: 50%;
+.discount__inner__layer h5{
+    font-size: 17px;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    font-family: 'fredoka',sans-serif;
 }
-.color2{
-    background-color: #FE5E35;
-    padding: 16px;
-    width: fit-content;
-    border-radius: 50%;
+.discount__inner__layer h6{
+    font-size: 65px;
+    font-weight: 900;
+    margin-top: 0;
+    padding-top: 0;
+    font-family: 'fredoka',sans-serif;
 }
-.color3{
-    background-color: black;
-    padding: 16px;
-    width: fit-content;
-    border-radius: 50%;
+.discount__toplayer{
+    position: absolute;
+    bottom: 15%;
+    left: -3vw;
 }
-/* Right End */
-
-/* Main Section  End*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* media queries sm*/
+/* RIGHT END */
+/* HERO END */
 @media only screen and (max-width:1460px){
+    main{
+        flex-direction: column-reverse;
+    }
+    .right{
+        margin-right: 0;
+    }
+    .profile svg{
+        display: inline-flex;
+    }
+    .profile img{
+        display: none;
+    }
     .pages{
         display: none;
     }
-    main{
-        flex-wrap: wrap;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .headphone__discount{
-        top: 55vh;
-    }
-    .headphone__discount h5{
-        margin-top: 20px;
-        margin-left: 15px;
-    }
-    .headphone__discount h6{
-        margin-top: 22px;
-        margin-left: 10px;
-    }
-    .right{
-        margin-top: 80px;
+    .left button{
+        margin-bottom: 50px;
     }
 }
+
+
+/* MEDIA QUERIES */
+
+/* MEDIA QUERIES END*/
