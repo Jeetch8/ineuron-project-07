@@ -196,6 +196,33 @@ main{
     .left button{
         margin-bottom: 50px;
     }
+    nav{
+        margin: auto;
+        margin-left: 0;
+        padding-top: 50px;
+        padding-left: 30px;
+    }
+}
+@media only screen and (max-width:1040px){
+    .left h1{
+        font-size: 50px;
+    }
+    .left h2{
+        font-size: 30px;
+    }
+    .features li{
+        font-size: 20px;
+    }
+    .left h4{
+        font-size: 16px;
+    }
+    .btn__section button,.right button{
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+    .left{
+        margin-left: 50px;
+    }
 }
 
 
